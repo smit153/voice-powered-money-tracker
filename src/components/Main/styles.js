@@ -22,10 +22,6 @@ export default makeStyles((theme) => ({
     margin: "20px 0",
   },
   root: {
-    height: "65vh",
-  },
-  toggler: {
-    float: "right",
-    width: "25%",
+    backgroundcolor: "rgba(255, 255, 255, 0.85)",
   },
 }));

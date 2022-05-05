@@ -128,7 +128,7 @@ const NewTransactionForm = () => {
           {/* {isSpeaking ? <BigTranscript /> : 'Start adding transactions'}  */}
         </Typography>
       </Grid>
-      <Grid item xs={3}>
+      <Grid item xs={6}>
         <FormControl fullWidth>
           <InputLabel>Type</InputLabel>
           <Select
@@ -140,7 +140,7 @@ const NewTransactionForm = () => {
           </Select>
         </FormControl>
       </Grid>
-      <Grid item xs={3}>
+      <Grid item xs={6}>
         <FormControl fullWidth>
           <InputLabel>Category</InputLabel>
           <Select
@@ -158,7 +158,7 @@ const NewTransactionForm = () => {
         </FormControl>
       </Grid>
 
-      <Grid item xs={3}>
+      <Grid item xs={6}>
         <TextField
           type="number"
           label="Amount"
@@ -167,7 +167,7 @@ const NewTransactionForm = () => {
           fullWidth
         />
       </Grid>
-      <Grid item xs={3}>
+      <Grid item xs={6}>
         <TextField
           fullWidth
           label="Date"

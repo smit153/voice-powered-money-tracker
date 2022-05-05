@@ -24,13 +24,6 @@ const ExpenseTracker = () => {
 
   return (
     <Card className={classes.root}>
-      <FormControl className={classes.toggler}>
-        <InputLabel>Type</InputLabel>
-        <Select>
-          <MenuItem value="Income">Income</MenuItem>
-          <MenuItem value="Expense">Expense</MenuItem>
-        </Select>
-      </FormControl>
       <CardHeader title="Expense Tracker" subheader="Powered by Speechly" />
 
       <CardContent>
@@ -39,7 +32,7 @@ const ExpenseTracker = () => {
         </Typography>
         <Typography
           variant="subtitle1"
-          style={{ lineHeight: "1.5em", marginTop: "10px" }}
+          style={{ lineHeight: "1.5em", marginTop: "10px", color: "white" }}
         >
           <InfoCard />
         </Typography>
