@@ -32,7 +32,7 @@ const ExpenseTracker = () => {
         </Typography>
         <Typography
           variant="subtitle1"
-          style={{ lineHeight: "1.5em", marginTop: "10px", color: "white" }}
+          style={{ lineHeight: "1.5em", marginTop: "10px" }}
         >
           <InfoCard />
         </Typography>
