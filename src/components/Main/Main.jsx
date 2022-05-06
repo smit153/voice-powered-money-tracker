@@ -1,17 +1,21 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
+// import { Grid, IconButton } from "@material-ui/core";
+
+import { Delete } from "@material-ui/icons";
 import {
   Card,
   CardHeader,
   CardContent,
+  IconButton,
   Typography,
   Grid,
   Divider,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
+  // FormControl,
+  // InputLabel,
+  // Select,
+  // MenuItem,
 } from "@material-ui/core";
-import { useSpeechContext } from "@speechly/react-client";
+// import { useSpeechContext } from "@speechly/react-client";
 import { ExpenseTrackerContext } from "../../context/context";
 import useStyles from "./styles";
 import Form from "./Form/Form";
@@ -21,9 +25,19 @@ import InfoCard from "../InfoCard";
 const ExpenseTracker = () => {
   const classes = useStyles();
   const { balance } = useContext(ExpenseTrackerContext);
-
+  //const { transactions, deleteTransaction } = useContext(ExpenseTrackerContext);
   return (
     <Card className={classes.root}>
+      <div className={classes.clearButton}>
+        <IconButton edge="end" aria-label="delete">
+          <Delete
+            onClick={() => {
+              localStorage.removeItem("transactions");
+              window.location.reload();
+            }}
+          />
+        </IconButton>
+      </div>
       <CardHeader title="Expense Tracker" subheader="Powered by Speechly" />
 
       <CardContent>

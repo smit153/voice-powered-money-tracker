@@ -24,4 +24,11 @@ export default makeStyles((theme) => ({
   root: {
     backgroundcolor: "rgba(255, 255, 255, 0.85)",
   },
+  clearButton: {
+    // position: "absolute",
+    // top: "20",
+    // left: "20",
+    // color: "white",
+    float: "right",
+  },
 }));

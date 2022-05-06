@@ -15,6 +15,7 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       paddingBottom: "5%",
     },
+    // height: "70vh",
   },
   last: {
     [theme.breakpoints.down("sm")]: {

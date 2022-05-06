@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { Grid } from "@material-ui/core";
 import "./snow.scss";
-import { SpeechState, useSpeechContext } from "@speechly/react-client";
+
+// import {  useSpeechContext } from "@speechly/react-client";
 import {
   PushToTalkButton,
   PushToTalkButtonContainer,
@@ -12,17 +13,17 @@ import useStyles from "./styles";
 
 const App = () => {
   const classes = useStyles();
-  const { speechState } = useSpeechContext();
+  // const { speechState } = useSpeechContext();
   const main = useRef(null);
 
-  const executeScroll = () => main.current.scrollIntoView();
+  // const executeScroll = () => main.current.scrollIntoView();
   const shape = [];
   // useEffect(() => {
   //   if (speechState === SpeechState.Recording) {
   //     executeScroll();
   //   }
   // }, [speechState]);
-  for (let i = 0; i < 200; i++) {
+  for (let i = 0; i < 50; i++) {
     shape.push(<div className="snow" key={i}></div>);
   }
 
@@ -35,7 +36,7 @@ const App = () => {
         container
         spacing={0}
         alignItems="center"
-        justify="center"
+        justifyContent="center"
         style={{ height: "100vh", zIndex: 1 }}
       >
         <Grid item xs={12} sm={4} className={classes.mobile}>
